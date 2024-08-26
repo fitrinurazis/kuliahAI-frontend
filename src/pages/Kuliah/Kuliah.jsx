@@ -1,4 +1,3 @@
-
 import Jurusan from "../../pages/Jurusan/Jurusan";
 import Navbar from "../../components/Navbar/Navbar";
 

@@ -11,8 +11,7 @@ import DesainKomunikasiVisual from "./pages/Prody/DesainKumunikasiVisual";
 import Akuntansi from "./pages/Prody/Akuntansi";
 import Management from "./pages/Prody/Management";
 import Bisnis from "./pages/Prody/Bisnis";
-import Hukum from "./pages/Prody/Hukum"
-
+import Hukum from "./pages/Prody/Hukum";
 
 function App() {
   return (
@@ -29,8 +28,6 @@ function App() {
       <Route path="/mm" element={<Management />} />
       <Route path="/bsn" element={<Bisnis />} />
       <Route path="/hk" element={<Hukum />} />
-      
-      
     </Routes>
   );
 }
