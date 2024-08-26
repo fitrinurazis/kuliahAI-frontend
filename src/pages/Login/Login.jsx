@@ -122,16 +122,16 @@ function Login() {
             </p>
             <div className="flex gap-5">
               <Link to="https://api.whatsapp.com/send/?phone=6281382923343">
-                <button className="flex items-center px-3 py-1 text-sm text-white bg-green-600 rounded-md">
+                <p className="flex items-center px-3 py-1 text-sm text-white bg-green-600 rounded-md">
                   <FaWhatsapp />
                   <span>081382923343</span>
-                </button>
+                </p>
               </Link>
               <Link to="https://api.whatsapp.com/send/?phone=6281578375430">
-                <button className="flex items-center px-3 py-1 text-sm text-white bg-green-600 rounded-md">
+                <p className="flex items-center px-3 py-1 text-sm text-white bg-green-600 rounded-md">
                   <FaWhatsapp />
                   <span> 081578375430</span>
-                </button>
+                </p>
               </Link>
             </div>
           </div>
