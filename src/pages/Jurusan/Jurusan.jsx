@@ -5,14 +5,14 @@ function Jurusan() {
     <div className="flex flex-col w-full px-2 ">
       <div className="flex justify-center gap-3">
         <ul className="flex flex-col justify-center w-full gap-3 text-center">
-          <Link to="/ti">
+          <Link to="/teknik_informatika">
             <li className="p-3 border-2 rounded-lg border-sky-700">
               <span>Teknik Informatika</span>
             </li>
           </Link>
-          <Link to="/ik">
+          <Link to="/sistem_komputer">
             <li className="p-3 border-2 rounded-lg border-sky-700">
-              <span>Ilmu Komputer</span>
+              <span>Sistem Komputer </span>
             </li>
           </Link>
           <Link to="/si">
