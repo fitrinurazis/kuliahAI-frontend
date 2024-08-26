@@ -6,16 +6,15 @@ function Jurusan() {
       <h1 className="pt-5 pb-10 text-3xl font-semibold text-center ">
         Program Study
       </h1>
-      <div className="flex justify-center gap-3">
+      <div className="flex justify-center gap-3 px-3">
         <ul className="flex flex-col justify-center w-full gap-3 text-center">
-          <Link to="/teknik_informatika">
+          <Link to="/ti">
             <li className="p-3 border-2 rounded-lg border-sky-700">
               <span>Teknik Informatika </span>
             </li>
           </Link>
 
           <Link to="/sk">
-
             <li className="p-3 border-2 rounded-lg border-sky-700">
               <span>Sistem Komputer </span>
             </li>
@@ -30,7 +29,7 @@ function Jurusan() {
               <span>Desain Komunikasi Visual </span>
             </li>
           </Link>
-          
+
           <Link to="/ak">
             <li className="p-3 border-2 rounded-lg border-sky-700">
               <span>Akuntansi </span>
@@ -51,8 +50,6 @@ function Jurusan() {
               <span>Hukum </span>
             </li>
           </Link>
-          
-          
         </ul>
       </div>
     </div>
