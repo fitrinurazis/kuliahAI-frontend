@@ -1,20 +1,12 @@
 
 import Jurusan from "../../pages/Jurusan/Jurusan";
-import Navbar2 from "../../components/navbar2/navbar";
+import Navbar from "../../components/Navbar/Navbar";
 
 function Kuliah() {
   return (
-    <div className="bg-gray-100 ">
-      <div className="relative flex flex-col items-center justify-between max-w-md min-h-screen mx-auto bg-white shadow-md">
-        <Navbar2 />
-        <div className="relative top-0 flex flex-col justify-center w-full px-3">
-          <h1 className="pt-5 pb-10 text-3xl font-semibold text-center ">
-            Program Study
-          </h1>
-          <Jurusan />
-        </div>
-      
-      </div>
+    <div className="flex flex-col items-center justify-start max-w-md min-h-screen mx-auto bg-white shadow-md">
+      <Navbar />
+      <Jurusan />
     </div>
   );
 }

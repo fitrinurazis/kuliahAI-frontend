@@ -3,6 +3,7 @@ import Kuliah from "./pages/Kuliah/Kuliah";
 import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
+
 import TeknikInformatika from "./pages/Prody/Teknikinformatika";
 import SistemInformasi from "./pages/Prody/SistemInformasi";
 import SistemKomputer from "./pages/Prody/SistemKomputer";
@@ -11,7 +12,6 @@ import Akuntansi from "./pages/Prody/Akuntansi";
 import Management from "./pages/Prody/Management";
 import Bisnis from "./pages/Prody/Bisnis";
 import Hukum from "./pages/Prody/Hukum"
-
 
 
 function App() {
