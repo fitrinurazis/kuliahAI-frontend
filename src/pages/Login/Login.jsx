@@ -97,17 +97,28 @@ function Login() {
               Masuk
             </button>
           </div>
-          <div className="mt-4 text-center">
+          <div className="pt-5 pb-3 text-center ">
             <Link
-              className="text-sm text-sky-700 hover:text-sky-500"
+              className="text-md text-sky-700 hover:text-sky-500"
               to="/lupa_password"
             >
-              Lupa Password?
+              <p>Lupa Password?</p>
             </Link>
+            <p className="pt-3 text-md">
+              Belum punya akun?{" "}
+              <span>
+                <Link
+                  className="text-sm text-sky-700 hover:text-sky-500"
+                  to="/register"
+                >
+                  Daftar
+                </Link>
+              </span>
+            </p>
           </div>
           <div className="flex flex-col items-center justify-center gap-y-2">
             <p className="text-sm">
-              Hubungan masalah teknis login, dan operasional.{" "}
+              Hubungan masalah teknis login, dan operasional.
             </p>
             <div className="flex gap-5">
               <Link to="https://api.whatsapp.com/send/?phone=6281382923343">
