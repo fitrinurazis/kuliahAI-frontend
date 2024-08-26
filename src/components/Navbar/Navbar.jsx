@@ -11,7 +11,7 @@ const TopNavbar = () => {
   };
 
   return (
-    <nav className="flex items-center w-full justify-between max-w-[1280px] px-4 py-2 mx-auto sticky top-0 z-50">
+    <nav className="flex items-center w-full justify-between max-w-[1280px] px-4 py-2 mx-auto sticky top-0 z-50 bg-white">
       <Link to="/">
         <div className="w-40">
           <img src={Logo} alt="Kuliah AI" />
