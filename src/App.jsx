@@ -1,17 +1,17 @@
 import { Route, Routes } from "react-router-dom";
-import Kuliah from "./pages/Kuliah/Kuliah";
 import Home from "./pages/Home/Home";
+import Kuliah from "./pages/Kuliah/Kuliah";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 
-import TeknikInformatika from "./pages/Prody/Teknikinformatika";
+import Akuntansi from "./pages/Prody/Akuntansi";
+import Bisnis from "./pages/Prody/Bisnis";
+import DesainKomunikasiVisual from "./pages/Prody/DesainKumunikasiVisual";
+import Hukum from "./pages/Prody/Hukum";
+import Management from "./pages/Prody/Management";
 import SistemInformasi from "./pages/Prody/SistemInformasi";
 import SistemKomputer from "./pages/Prody/SistemKomputer";
-import DesainKomunikasiVisual from "./pages/Prody/DesainKumunikasiVisual";
-import Akuntansi from "./pages/Prody/Akuntansi";
-import Management from "./pages/Prody/Management";
-import Bisnis from "./pages/Prody/Bisnis";
-import Hukum from "./pages/Prody/Hukum";
+import TeknikInformatika from "./pages/Prody/Teknikinformatika";
 
 function App() {
   return (

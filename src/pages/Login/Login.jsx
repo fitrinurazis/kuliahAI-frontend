@@ -47,16 +47,16 @@ function Login() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-      <div className="px-8 pt-6 pb-8 mx-2 mb-4 bg-white shadow-md rounded-xl ">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-800">
+      <div className="px-8 pt-6 pb-8 mx-2 mb-4 bg-gray-100 shadow-md dark:bg-gray-800 rounded-xl ">
         <div className="flex justify-center">
           <img src={Logo} alt="Kuliah AI" className="pb-5 w-[430px]" />
         </div>
         <div className="mb-4 text-center ">
-          <h2 className="text-4xl font-bold text-gray-800">
+          <h2 className="text-4xl font-bold dark:text-white">
             Selamat Datang Kawan
           </h2>
-          <p className="py-5 text-sm text-gray-600">
+          <p className="py-5 text-sm text-gray-800 dark:text-white">
             Lanjutkan masuk menggunakan email atau NIM dan password
           </p>
         </div>
@@ -64,7 +64,7 @@ function Login() {
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <input
-              className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+              className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline dark:bg-gray-800"
               name="indentifier"
               type="text"
               value={FormData.identifier}
@@ -77,7 +77,7 @@ function Login() {
           </div>
           <div className="mb-6">
             <input
-              className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+              className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none dark:bg-gray-800 focus:shadow-outline"
               name="password"
               type="password"
               placeholder="Password"
@@ -104,11 +104,11 @@ function Login() {
             >
               <p>Lupa Password?</p>
             </Link>
-            <p className="pt-3 text-md">
+            <p className="pt-3 text-md dark:text-white">
               Belum punya akun?{" "}
               <span>
                 <Link
-                  className="text-sm text-sky-700 hover:text-sky-500"
+                  className="text-sm text-sky-700 hover:text-sky-500 "
                   to="/register"
                 >
                   Daftar
@@ -117,7 +117,7 @@ function Login() {
             </p>
           </div>
           <div className="flex flex-col items-center justify-center gap-y-2">
-            <p className="text-sm">
+            <p className="text-sm dark:text-white">
               Hubungan masalah teknis login, dan operasional.
             </p>
             <div className="flex gap-5">

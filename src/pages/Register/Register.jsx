@@ -62,17 +62,17 @@ function Register() {
           <img src={Logo} alt="Kuliah AI" className="pb-5 w-[430px]" />
         </div>
         <div className="mb-4 text-center ">
-          <h2 className="text-3xl font-bold text-gray-800 md:text-4xl">
+          <h2 className="text-3xl font-bold text-gray-800 md:text-4xl dark:text-gray-100">
             Selamat Datang
           </h2>
-          <p className="py-5 text-sm text-gray-600">
+          <p className="py-5 text-sm text-gray-600 dark:text-gray-100">
             Daftar menggunakan email dan NIM
           </p>
         </div>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <input
-              className={`mt-1 block w-full px-3 py-2 border ${
+              className={`mt-1 block w-full px-3 py-2 border dark:bg-gray-800 ${
                 errors.nama ? "border-red-500" : "border-gray-300"
               } rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm`}
               type="text"
@@ -87,7 +87,7 @@ function Register() {
           </div>
           <div className="mb-4">
             <input
-              className={`mt-1 block w-full px-3 py-2 border ${
+              className={`mt-1 block w-full px-3 py-2 border dark:bg-gray-800 ${
                 errors.nim ? "border-red-500" : "border-gray-300"
               } rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm`}
               type="text"
@@ -102,7 +102,7 @@ function Register() {
           </div>
           <div className="mb-4">
             <input
-              className={`mt-1 block w-full px-3 py-2 border ${
+              className={`mt-1 block w-full px-3 py-2 border dark:bg-gray-800 ${
                 errors.email ? "border-red-500" : "border-gray-300"
               } rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm`}
               name="email"
@@ -117,7 +117,7 @@ function Register() {
           </div>
           <div className="mb-6">
             <input
-              className={`mt-1 block w-full px-3 py-2 border ${
+              className={`mt-1 block w-full px-3 py-2 border dark:bg-gray-800 ${
                 errors.password ? "border-red-500" : "border-gray-300"
               } rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm`}
               name="password"
@@ -132,7 +132,7 @@ function Register() {
           </div>
           <div className="mb-6">
             <input
-              className={`mt-1 block w-full px-3 py-2 border ${
+              className={`mt-1 block w-full px-3 py-2 border dark:bg-gray-800 ${
                 errors.confirmPassword ? "border-red-500" : "border-gray-300"
               } rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm`}
               name="confirmPassword"
@@ -158,7 +158,7 @@ function Register() {
           </div>
         </form>
         <div className="mt-4 text-center">
-          <p className="text-sm">
+          <p className="text-sm dark:text-gray-100">
             Sudah punya akun?
             <Link
               to="/Login"
