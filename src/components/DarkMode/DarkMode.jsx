@@ -1,29 +1,16 @@
-import { createContext, useState, useEffect } from "react";
+import { createContext, useEffect, useState } from "react";
 
-// Context untuk Dark Mode
-export const DarkMode = createContext();
+const DarkMode = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  const [darkMode, setDarkMode] = useState(() => {
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme) {
-      return savedTheme === "dark";
-    }
-
-    const prefersDarkScheme = window.matchMedia(
-      "(prefers-color-scheme: dark)"
-    ).matches;
-    return prefersDarkScheme;
-  });
+  const [darkMode, setDarkMode] = useState(
+    window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"
+  );
 
   useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    }
+    const root = window.document.documentElement;
+    root.classList.remove(darkMode === "light" ? "dark" : "light");
+    root.classList.add(darkMode);
   }, [darkMode]);
 
   return (
@@ -32,3 +19,5 @@ export const ThemeProvider = ({ children }) => {
     </DarkMode.Provider>
   );
 };
+
+export default DarkMode;

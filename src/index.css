@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --primary-color: #eeeeee; /* Warna default untuk light mode */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #111111; /* Warna default untuk dark mode */
+  }
+}
