@@ -3,7 +3,6 @@ import Home from "./pages/Home/Home";
 import Kuliah from "./pages/Kuliah/Kuliah";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
-
 import Akuntansi from "./pages/Prody/Akuntansi";
 import Bisnis from "./pages/Prody/Bisnis";
 import DesainKomunikasiVisual from "./pages/Prody/DesainKumunikasiVisual";

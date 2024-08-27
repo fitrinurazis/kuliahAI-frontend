@@ -4,9 +4,9 @@ function Jurusan() {
   return (
     <div className="flex flex-col w-full px-2">
       <div className="flex justify-center gap-3">
-        <ul className="flex flex-col justify-center w-full gap-3 text-center">
+        <ul className="flex flex-col justify-center w-full gap-3 text-center dark:text-gray-100">
           <Link to="/ti">
-            <li className="p-3 border-2 rounded-lg border-sky-700">
+            <li className="p-3 border-2 rounded-lg border-sky-700 ">
               <span>Semester 1</span>
             </li>
           </Link>
