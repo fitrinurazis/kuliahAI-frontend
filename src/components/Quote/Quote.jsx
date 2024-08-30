@@ -15,7 +15,7 @@ const Quote = () => {
 
     const intervalId = setInterval(() => {
       setQuote(getRandomQuote());
-    }, 5000);
+    }, 10000);
 
     setQuote(getRandomQuote());
 
