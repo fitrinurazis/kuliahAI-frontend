@@ -1,0 +1,12 @@
+{
+  "jurusan": [
+    { "id": "1", "text": "Teknik Informatika", "link": "/ti" },
+    { "id": "2", "text": "Sistem Komputer", "link": "/sk" },
+    { "id": "3", "text": "Sistem Informasi", "link": "/si" },
+    { "id": "4", "text": "Desain Komunikasi Visual", "link": "/dkv" },
+    { "id": "5", "text": "Akuntansi", "link": "/ak" },
+    { "id": "6", "text": "Management", "link": "/mm" },
+    { "id": "7", "text": "Bisnis", "link": "/bns" },
+    { "id": "8", "text": "Hukum", "link": "/hk" }
+  ]
+}
