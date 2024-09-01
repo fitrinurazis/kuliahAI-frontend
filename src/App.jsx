@@ -11,6 +11,7 @@ import Management from "./pages/Prody/Management";
 import SistemInformasi from "./pages/Prody/SistemInformasi";
 import SistemKomputer from "./pages/Prody/SistemKomputer";
 import TeknikInformatika from "./pages/Prody/Teknikinformatika";
+import Dashboard from "./pages/Dashboard/Dashboard";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <Route path="/mm" element={<Management />} />
       <Route path="/bsn" element={<Bisnis />} />
       <Route path="/hk" element={<Hukum />} />
+      <Route path="/dashboard" element={<Dashboard />} />
     </Routes>
   );
 }

@@ -3,10 +3,10 @@ import Logo from "/src/assets/logo/logo_light.png";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { MdOutlineDarkMode, MdDarkMode } from "react-icons/md";
-import HamburgerMenu from "../../components/Navbar/HamburgerMenu";
+import HamburgerMenu from "./HamburgerMenu";
 import DarkMode from "../DarkMode/DarkMode";
 
-const Navbar = () => {
+const NavbarDashboard = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -41,22 +41,25 @@ const Navbar = () => {
         </div>
       </div>
       <div
-        className={`fixed left-0 w-full h-full bg-gray-900 bg-opacity-50 top-20 transition-transform duration-300 ease-in-out ${
+        className={`fixed left-0 w-full h-full bg-gray-900 bg-opacity-50 top-16 transition-transform duration-300 ease-in-out ${
           isMenuOpen
-            ? "translate-y-0 opacity-100"
-            : "-translate-y-full opacity-0 pointer-events-none"
+            ? "translate-x-0 opacity-100"
+            : "-translate-x-full opacity-0 pointer-events-none"
         }`}
       >
-        <div className="z-10 flex flex-col justify-center pt-5 pb-10 font-semibold text-center bg-gray-100 dark:bg-gray-700 ">
+        <div className="z-10 flex flex-col items-start justify-start w-1/2 h-full pt-5 pb-10 pl-5 font-semibold bg-gray-100 dark:bg-gray-700 ">
           <ul>
             <li className="p-1 text-xl hover:text-sky-500 hover:dark:text-sky-500 dark:text-white">
-              <Link to="/pengaturan">Pengaturan</Link>
+              <Link to="/dashboard">Dashboard</Link>
             </li>
             <li className="p-1 text-xl hover:text-sky-500 hover:dark:text-sky-500 dark:text-white">
-              <Link to="/dukung_kami">Dukung Kami</Link>
+              <Link to="/add-kuliah">Kuliah AI</Link>
             </li>
             <li className="p-1 text-xl hover:text-sky-500 hover:dark:text-sky-500 dark:text-white">
-              <Link to="/tentang_kami">Tentang Kami</Link>
+              <Link to="/add-ebook">Ebook</Link>
+            </li>
+            <li className="p-1 text-xl hover:text-sky-500 hover:dark:text-sky-500 dark:text-white">
+              <Link to="/add-aplikasi">Aplikasi</Link>
             </li>
           </ul>
           <button
@@ -68,11 +71,11 @@ const Navbar = () => {
           >
             {darkMode === "dark" ? (
               <>
-                <MdOutlineDarkMode /> Tema Terang
+                Tema Terang <MdOutlineDarkMode />
               </>
             ) : (
               <>
-                <MdDarkMode /> Tema Gelap
+                Tema Gelap <MdDarkMode />
               </>
             )}
           </button>
@@ -82,4 +85,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavbarDashboard;
