@@ -53,10 +53,10 @@ const Navbar = () => {
               <Link to="/pengaturan">Pengaturan</Link>
             </li>
             <li className="p-1 text-xl hover:text-sky-500 hover:dark:text-sky-500 dark:text-white">
-              <Link to="/dukung_kami">Dukung Kami</Link>
+              <Link to="/dukung-kami">Dukung Kami</Link>
             </li>
             <li className="p-1 text-xl hover:text-sky-500 hover:dark:text-sky-500 dark:text-white">
-              <Link to="/tentang_kami">Tentang Kami</Link>
+              <Link to="/tentang-kami">Tentang Kami</Link>
             </li>
           </ul>
           <button
