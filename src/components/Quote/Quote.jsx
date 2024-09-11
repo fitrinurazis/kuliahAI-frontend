@@ -23,7 +23,7 @@ const Quote = () => {
   }, []);
 
   return (
-    <div className="px-4 pt-10 pb-20 text-lg text-center font-dmserif">
+    <div className="px-5 pt-5 pb-20 text-lg text-center font-dmserif h-36">
       <Typewriter words={[quote]} loop={1} cursor />
     </div>
   );
