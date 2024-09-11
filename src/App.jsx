@@ -12,6 +12,8 @@ import SistemInformasi from "./pages/Prody/SistemInformasi";
 import SistemKomputer from "./pages/Prody/SistemKomputer";
 import TeknikInformatika from "./pages/Prody/Teknikinformatika";
 import Dashboard from "./pages/Dashboard/Dashboard";
+import AboutMe from "./pages/AboutMe/AboutMe";
+import SupportMe from "./pages/SupportMe/SupportMe";
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
       <Route path="/bsn" element={<Bisnis />} />
       <Route path="/hk" element={<Hukum />} />
       <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/tentang-kami" element={<AboutMe />} />
+      <Route path="/dukung-kami" element={<SupportMe />} />
     </Routes>
   );
 }
