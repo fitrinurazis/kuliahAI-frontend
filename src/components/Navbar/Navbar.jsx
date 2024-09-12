@@ -41,7 +41,7 @@ const Navbar = () => {
         </div>
       </div>
       <div
-        className={`fixed left-0 w-full h-full bg-gray-900 bg-opacity-50 top-20 transition-transform duration-300 ease-in-out ${
+        className={`fixed left-0 w-full h-full flex flex-col bg-gray-900 bg-opacity-50 top-20 transition-transform duration-300 ease-in-out ${
           isMenuOpen
             ? "translate-y-0 opacity-100"
             : "-translate-y-full opacity-0 pointer-events-none"
@@ -50,7 +50,7 @@ const Navbar = () => {
         <div className="z-10 flex flex-col justify-center pt-5 pb-10 font-semibold text-center bg-gray-100 dark:bg-gray-700 ">
           <ul>
             <li className="p-1 text-xl hover:text-sky-500 hover:dark:text-sky-500 dark:text-white">
-              <Link to="/pengaturan">Pengaturan</Link>
+              <Link to="/pengaturan">Profil</Link>
             </li>
             <li className="p-1 text-xl hover:text-sky-500 hover:dark:text-sky-500 dark:text-white">
               <Link to="/dukung-kami">Dukung Kami</Link>
@@ -75,6 +75,20 @@ const Navbar = () => {
                 <MdDarkMode /> Tema Gelap
               </>
             )}
+          </button>
+          <button className="flex items-center justify-center gap-3 pt-10">
+            <Link to="/register">
+              <span className="px-32 py-1 text-xl text-center text-white rounded-lg cursor-pointer bg-sky-700 dark:text-white hover:text-sky-700 hover:dark:text-sky-700 hover:bg-slate-300 ">
+                Masuk
+              </span>
+            </Link>
+          </button>
+          <button className="flex items-center justify-center gap-3 pt-3">
+            <Link to="/register">
+              <span className="px-32 py-1 text-xl text-center text-white rounded-lg cursor-pointer bg-sky-700 dark:text-white hover:text-sky-700 hover:dark:text-sky-700 hover:bg-slate-300 ">
+                Daftar
+              </span>
+            </Link>
           </button>
         </div>
       </div>
