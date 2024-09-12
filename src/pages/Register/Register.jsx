@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function Register() {
   const [formData, setFormData] = useState({
     nama: "",
-    nim: "",
+    nohp: "",
     email: "",
     password: "",
     confirmPassword: "",
@@ -24,7 +24,7 @@ function Register() {
   const validate = () => {
     let tempErrors = {};
     if (!formData.nama) tempErrors.nama = "Masukkan nama";
-    if (!formData.nim) tempErrors.nim = "Masukkan NIM";
+    if (!formData.nim) tempErrors.nim = "Masukkan No. Hanphone";
     if (!formData.email) tempErrors.email = "Masukkan Email";
     if (!/\S+@\S+\.\S+/.test(formData.email))
       tempErrors.email = "Email tidak valid";
@@ -66,7 +66,7 @@ function Register() {
             Selamat Datang
           </h2>
           <p className="py-5 text-sm text-gray-600 dark:text-gray-100">
-            Daftar menggunakan email dan NIM
+            Daftar menggunakan email dan No Hp
           </p>
         </div>
         <form onSubmit={handleSubmit}>
@@ -94,7 +94,7 @@ function Register() {
               name="nim"
               value={formData.nim}
               onChange={handleChange}
-              placeholder="NIM (Nomor INduk Mahasiswa)"
+              placeholder="No Hp"
             />
             {errors.nim && (
               <p className="mt-1 text-xs text-red-500">{errors.nim}</p>

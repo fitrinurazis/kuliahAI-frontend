@@ -21,7 +21,8 @@ function Login() {
 
   const validate = () => {
     let tempErrors = {};
-    if (!formData.identifier) tempErrors.identifier = "Masukkan Email atau NIM";
+    if (!formData.identifier)
+      tempErrors.identifier = "Masukkan Email atau No Hp";
     if (!formData.password) tempErrors.password = "Masukkan Password";
 
     setErrors(tempErrors);
@@ -41,7 +42,7 @@ function Login() {
         // Handle successful login (e.g., redirect to dashboard)
       } catch (error) {
         console.error(error);
-        setMessage("Login failed. Check your email/NIM and password.");
+        setMessage("Login failed. Check your email/No Hp and password.");
       }
     }
   };
@@ -57,7 +58,7 @@ function Login() {
             Selamat Datang Kawan
           </h2>
           <p className="py-5 text-sm text-gray-800 dark:text-white">
-            Lanjutkan masuk menggunakan email atau NIM dan password
+            Lanjutkan masuk menggunakan email atau No Hp dan password
           </p>
         </div>
         {message && <p className="text-center text-red-500">{message}</p>}
@@ -68,7 +69,7 @@ function Login() {
               name="indentifier"
               type="text"
               value={FormData.identifier}
-              placeholder="Email atau NIM"
+              placeholder="Email atau No Hp"
               onChange={handleChange}
             />
             {errors.identifier && (
