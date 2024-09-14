@@ -12,6 +12,9 @@ const SupportMe = () => {
           </h1>
           <CardSupportMe />
         </div>
+        <div className="pt-20 text-center">
+          <p>©2024 Kuliah_AI</p>
+        </div>
       </div>
     </div>
   );
