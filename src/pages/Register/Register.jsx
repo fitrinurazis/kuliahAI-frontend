@@ -2,6 +2,7 @@ import { useState } from "react";
 import Logo from "/src/assets/logo/logo_light.png";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { FaWhatsapp } from "react-icons/fa";
 
 function Register() {
   const [formData, setFormData] = useState({
@@ -56,8 +57,8 @@ function Register() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen dark:bg-slate-800">
-      <div className="px-5 pt-6 pb-8 mx-2 mb-4 ">
+    <div className="flex flex-col items-center justify-center max-w-md min-h-screen mx-auto dark:bg-slate-800">
+      <div className="px-2 pt-6 pb-5 mx-2 mb-4 ">
         <div className="flex justify-center">
           <img src={Logo} alt="Kuliah AI" className="pb-5 w-[430px]" />
         </div>
@@ -65,7 +66,7 @@ function Register() {
           <h2 className="text-3xl font-bold text-gray-800 md:text-4xl dark:text-gray-100">
             Selamat Datang
           </h2>
-          <p className="py-5 text-sm text-gray-600 dark:text-gray-100">
+          <p className="py-5 text-lg text-gray-600 dark:text-gray-100">
             Daftar menggunakan email dan No Hp
           </p>
         </div>
@@ -74,7 +75,7 @@ function Register() {
             <input
               className={`mt-1 block w-full px-3 py-2 border dark:bg-gray-800 ${
                 errors.nama ? "border-red-500" : "border-gray-300"
-              } rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm`}
+              } rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm dark:text-white font-poppins`}
               type="text"
               name="nama"
               value={formData.nama}
@@ -89,7 +90,7 @@ function Register() {
             <input
               className={`mt-1 block w-full px-3 py-2 border dark:bg-gray-800 ${
                 errors.nim ? "border-red-500" : "border-gray-300"
-              } rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm`}
+              } rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm dark:text-white font-poppins`}
               type="text"
               name="nim"
               value={formData.nim}
@@ -104,7 +105,7 @@ function Register() {
             <input
               className={`mt-1 block w-full px-3 py-2 border dark:bg-gray-800 ${
                 errors.email ? "border-red-500" : "border-gray-300"
-              } rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm`}
+              } rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm dark:text-white font-poppins`}
               name="email"
               type="email"
               value={formData.email}
@@ -119,7 +120,7 @@ function Register() {
             <input
               className={`mt-1 block w-full px-3 py-2 border dark:bg-gray-800 ${
                 errors.password ? "border-red-500" : "border-gray-300"
-              } rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm`}
+              } rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm dark:text-white font-poppins`}
               name="password"
               type="password"
               value={formData.password}
@@ -134,7 +135,7 @@ function Register() {
             <input
               className={`mt-1 block w-full px-3 py-2 border dark:bg-gray-800 ${
                 errors.confirmPassword ? "border-red-500" : "border-gray-300"
-              } rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm`}
+              } rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm dark:text-white font-poppins`}
               name="confirmPassword"
               type="password"
               value={formData.confirmPassword}
@@ -167,6 +168,28 @@ function Register() {
               <span> Masuk</span>
             </Link>
           </p>
+        </div>
+        <div className="flex flex-col items-center justify-center pt-5 gap-y-2">
+          <p className="text-sm text-center dark:text-white">
+            Hubungan masalah teknis login, dan operasional.
+          </p>
+          <div className="flex gap-5 pt-2">
+            <Link to="https://api.whatsapp.com/send/?phone=6281382923343">
+              <p className="flex items-center gap-1 px-3 py-1 text-sm text-white bg-green-600 rounded-md">
+                <FaWhatsapp />
+                <span>081382923343</span>
+              </p>
+            </Link>
+            <Link to="https://api.whatsapp.com/send/?phone=6281578375430">
+              <p className="flex items-center gap-1 px-3 py-1 text-sm text-white bg-green-600 rounded-md">
+                <FaWhatsapp />
+                <span> 081578375430</span>
+              </p>
+            </Link>
+          </div>
+        </div>
+        <div className="pt-20 text-center dark:text-white">
+          <p>©2024 Kuliah_AI</p>
         </div>
       </div>
     </div>

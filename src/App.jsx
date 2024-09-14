@@ -14,6 +14,7 @@ import TeknikInformatika from "./pages/Prody/Teknikinformatika";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import AboutMe from "./pages/AboutMe/AboutMe";
 import SupportMe from "./pages/SupportMe/SupportMe";
+import UnavailablePage from "./pages/Unavailable/UnavailablePage";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/tentang-kami" element={<AboutMe />} />
       <Route path="/dukung-kami" element={<SupportMe />} />
+      <Route path="/halaman-tidak-ada" element={<UnavailablePage />} />
     </Routes>
   );
 }

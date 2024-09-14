@@ -33,10 +33,7 @@ function Login() {
     e.preventDefault();
     if (validate()) {
       try {
-        const response = await axios.post(
-          "http://localhost:5000/login",
-          formData
-        );
+        const response = await axios.post("/", formData);
         console.log(response.data);
         setMessage("Login successful");
         // Handle successful login (e.g., redirect to dashboard)
@@ -48,8 +45,8 @@ function Login() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-800">
-      <div className="px-8 pt-6 pb-8 mx-2 mb-4 bg-gray-100 shadow-md dark:bg-gray-800 rounded-xl ">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-white dark:bg-slate-800">
+      <div className="px-2 pt-6 pb-5 mx-2 mb-4 rounded-xl ">
         <div className="flex justify-center">
           <img src={Logo} alt="Kuliah AI" className="pb-5 w-[430px]" />
         </div>
@@ -57,15 +54,15 @@ function Login() {
           <h2 className="text-4xl font-bold dark:text-white">
             Selamat Datang Kawan
           </h2>
-          <p className="py-5 text-sm text-gray-800 dark:text-white">
+          <p className="py-5 text-lg text-gray-800 dark:text-white">
             Lanjutkan masuk menggunakan email atau No Hp dan password
           </p>
         </div>
         {message && <p className="text-center text-red-500">{message}</p>}
         <form onSubmit={handleSubmit}>
-          <div className="mb-4">
+          <div className="mb-4 ">
             <input
-              className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline dark:bg-gray-800"
+              className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline dark:bg-gray-800 dark:text-white font-poppins "
               name="indentifier"
               type="text"
               value={FormData.identifier}
@@ -78,7 +75,7 @@ function Login() {
           </div>
           <div className="mb-6">
             <input
-              className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none dark:bg-gray-800 focus:shadow-outline"
+              className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none dark:bg-gray-800 focus:shadow-outline dark:text-white font-poppins"
               name="password"
               type="password"
               placeholder="Password"
@@ -117,26 +114,29 @@ function Login() {
               </span>
             </p>
           </div>
-          <div className="flex flex-col items-center justify-center gap-y-2">
-            <p className="text-sm dark:text-white">
-              Hubungan masalah teknis login, dan operasional.
-            </p>
-            <div className="flex gap-5">
-              <Link to="https://api.whatsapp.com/send/?phone=6281382923343">
-                <p className="flex items-center px-3 py-1 text-sm text-white bg-green-600 rounded-md">
-                  <FaWhatsapp />
-                  <span>081382923343</span>
-                </p>
-              </Link>
-              <Link to="https://api.whatsapp.com/send/?phone=6281578375430">
-                <p className="flex items-center px-3 py-1 text-sm text-white bg-green-600 rounded-md">
-                  <FaWhatsapp />
-                  <span> 081578375430</span>
-                </p>
-              </Link>
-            </div>
-          </div>
         </form>
+        <div className="flex flex-col items-center justify-center gap-y-2">
+          <p className="text-sm text-center dark:text-white">
+            Hubungan masalah teknis login, dan operasional.
+          </p>
+          <div className="flex gap-5 pt-2">
+            <Link to="https://api.whatsapp.com/send/?phone=6281382923343">
+              <p className="flex items-center gap-1 px-3 py-1 text-sm text-white bg-green-600 rounded-md">
+                <FaWhatsapp />
+                <span>081382923343</span>
+              </p>
+            </Link>
+            <Link to="https://api.whatsapp.com/send/?phone=6281578375430">
+              <p className="flex items-center gap-1 px-3 py-1 text-sm text-white bg-green-600 rounded-md">
+                <FaWhatsapp />
+                <span> 081578375430</span>
+              </p>
+            </Link>
+          </div>
+        </div>
+        <div className="pt-20 text-center dark:text-white">
+          <p>©2024 Kuliah_AI</p>
+        </div>
       </div>
     </div>
   );

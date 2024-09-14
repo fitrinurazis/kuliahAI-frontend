@@ -1,12 +1,12 @@
 {
   "semester": [
     { "id": "1", "text": "Semester 1", "link": "/smtr1" },
-    { "id": "2", "text": "Semester 2", "link": "/smtr2" },
-    { "id": "3", "text": "Semester 3", "link": "/smtr3" },
-    { "id": "4", "text": "Semester 4", "link": "/smtr4" },
-    { "id": "5", "text": "Semester 5", "link": "/smtr5" },
-    { "id": "6", "text": "Semester 6", "link": "/smtr6" },
-    { "id": "7", "text": "Semester 7", "link": "/smtr7" },
-    { "id": "8", "text": "Semester 8", "link": "/smtr8" }
+    { "id": "2", "text": "Semester 2", "link": "/halaman-tidak-ada" },
+    { "id": "3", "text": "Semester 3", "link": "/halaman-tidak-ada" },
+    { "id": "4", "text": "Semester 4", "link": "/halaman-tidak-ada" },
+    { "id": "5", "text": "Semester 5", "link": "/halaman-tidak-ada" },
+    { "id": "6", "text": "Semester 6", "link": "/halaman-tidak-ada" },
+    { "id": "7", "text": "Semester 7", "link": "/halaman-tidak-ada" },
+    { "id": "8", "text": "Semester 8", "link": "/halaman-tidak-ada" }
   ]
 }

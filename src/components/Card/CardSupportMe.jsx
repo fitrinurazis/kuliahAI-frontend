@@ -4,7 +4,7 @@ import coffe from "../../assets/logo/coffe.jpg";
 
 const CardSupportMe = () => {
   return (
-    <div className="flex flex-wrap items-center justify-center gap-4 mx-auto">
+    <div className="flex flex-wrap items-center justify-center gap-5 mx-auto ">
       <Link to="https://saweria.co/KuliahAi">
         <div className="flex flex-col items-center justify-center w-36 gap-3 p-2 border-2 border-black rounded-lg shadow-lg h-[19rem] shadow-gray-900 dark:border-sky-700 dark:shadow-gray-500">
           <img className="w-40 rounded-lg" src={donate} />
@@ -17,7 +17,7 @@ const CardSupportMe = () => {
         </div>
       </Link>
       <Link to="https://saweria.co/KuliahAi ">
-        <div className="flex flex-col items-center justify-center w-36 gap-8 h-[19rem] p-2 border-2 border-black rounded-lg shadow-lg shadow-gray-900 dark:border-sky-700 dark:shadow-gray-500">
+        <div className="flex flex-col items-center justify-center w-36 gap-11 h-[19rem] p-2 border-2 border-black rounded-lg shadow-lg shadow-gray-900 dark:border-sky-700 dark:shadow-gray-500">
           <img className="w-40 rounded-lg" src={coffe} />
           <p className="text-sm text-center font-poppins">
             Traktir aku secangkir kopi.
