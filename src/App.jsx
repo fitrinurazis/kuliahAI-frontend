@@ -15,6 +15,8 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 import AboutMe from "./pages/AboutMe/AboutMe";
 import SupportMe from "./pages/SupportMe/SupportMe";
 import UnavailablePage from "./pages/Unavailable/UnavailablePage";
+import Profile from "./pages/Profile/Profile";
+import EditFoto from "./components/Profile/EditFoto";
 
 function App() {
   return (
@@ -32,6 +34,8 @@ function App() {
       <Route path="/bsn" element={<Bisnis />} />
       <Route path="/hk" element={<Hukum />} />
       <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/profil" element={<Profile />} />
+      <Route path="/profil/editfotoprofil" element={<EditFoto />} />
       <Route path="/tentang-kami" element={<AboutMe />} />
       <Route path="/dukung-kami" element={<SupportMe />} />
       <Route path="/halaman-tidak-ada" element={<UnavailablePage />} />

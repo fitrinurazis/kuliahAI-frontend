@@ -50,7 +50,7 @@ const Navbar = () => {
         <div className="z-10 flex flex-col justify-center pt-5 pb-10 font-semibold text-center bg-gray-100 dark:bg-gray-700 ">
           <ul>
             <li className="p-1 text-xl hover:text-sky-500 hover:dark:text-sky-500 dark:text-white">
-              <Link to="/pengaturan">Profil</Link>
+              <Link to="/profil">Profil</Link>
             </li>
             <li className="p-1 text-xl hover:text-sky-500 hover:dark:text-sky-500 dark:text-white">
               <Link to="/dukung-kami">Dukung Kami</Link>

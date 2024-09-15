@@ -5,8 +5,8 @@ import { AiFillInstagram } from "react-icons/ai";
 
 const AboutMe = () => {
   return (
-    <div className="max-w-md min-h-screen mx-auto bg-gray-100 dark:bg-gray-800">
-      <div className="flex flex-col items-center justify-start bg-gray-100 dark:bg-gray-800 dark:text-white">
+    <div className="bg-gray-100 dark:bg-gray-800">
+      <div className="max-w-md min-h-screen mx-auto bg-gray-100 dark:bg-gray-800 dark:text-white">
         <Navbar />
         <div className="relative flex flex-col justify-center w-full px-5 align-top">
           <h1 className="pt-5 pb-10 text-2xl font-semibold text-center dark:text-gray-100 ">
