@@ -15,8 +15,10 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 import AboutMe from "./pages/AboutMe/AboutMe";
 import SupportMe from "./pages/SupportMe/SupportMe";
 import UnavailablePage from "./pages/Unavailable/UnavailablePage";
+
 import Profile from "./pages/Profile/Profile";
 import EditFoto from "./components/Profile/EditFoto";
+
 
 function App() {
   return (
